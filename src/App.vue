@@ -1,10 +1,17 @@
 <script setup>
-import Welcome from './components/Welcome.vue'
+import Navbar from './components/layout/Navbar.vue'
+import Footer from './components/layout/Footer.vue'
+
+import wallpaper from "/assets/images/wallpaper.jpg";
 
 </script>
 
 <template>
-  <Welcome/>
+  <Navbar/>
+    <main :style="{ backgroundImage: `url(${wallpaper})`, backgroundSize: 'cover', backgroundPosition: 'center' }">
+     <router-view/>
+    </main>
+  <Footer/>
 </template>
 
 <style>

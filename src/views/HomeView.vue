@@ -61,7 +61,7 @@
 </template>
 
 <script setup>
-import alharam from "@/assets/images/alharam.avif";
+import alharam from "/assets/images/alharam.avif";
 </script>
 
 <style>
